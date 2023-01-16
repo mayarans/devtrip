@@ -34,6 +34,30 @@ function click () {
   }
 }
 
+/* Alternando entre os slides */
+
+const getInputRadio = document.querySelectorAll(".radio-btn")
+const getManualBtn = document.querySelectorAll(".manual-btn")
+const getSlides = document.querySelector(".slides")
+
+let count = 0
+
+setInterval( function(){
+  nextImage();
+}, 5000)
+
+getSlides.scrollLeft = 0
+function nextImage () {
+  getSlides.scrollLeft += 800
+  count++
+  getManualBtn[count-1].classList.remove("manual-btn-clicked")
+  if (count >= getInputRadio.length){
+     count = 0
+     getSlides.scrollLeft = 0
+   }
+   getManualBtn[count].classList.add("manual-btn-clicked") 
+}
+
 arrowRight.addEventListener("click", () => {
   container.scrollLeft+=movimento
   setTimeout(click, 300)

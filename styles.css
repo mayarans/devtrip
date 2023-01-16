@@ -197,3 +197,98 @@ ul:hover {
   cursor: pointer;
 }
 
+/* ESTILIZAÇÃO DO SLIDESHOW */
+
+.container-slideshow {
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.container-slideshow-title {
+  display: flex;
+  max-width: 1176px;
+  padding: 0px 24px;
+  margin: 0px auto;
+}
+
+.slideshow-title {
+  font-size: 20px;
+  font-weight: 700;
+  width: auto;
+  line-height: 1.5;
+  flex: 2 1 auto;
+  margin: 0px;
+}
+
+/* SLIDES */
+.slideshow {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.slides {
+  display: flex;
+  width: 800px;
+  height: 450px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  border-radius: 8px;
+
+}
+
+.radio-buttons input {
+  display: flex;
+  width: 400%;
+  height: 400px;
+  display: none;
+  
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  
+}
+
+.slide img {
+  width: 800px;
+  border-radius: 12px;
+}
+
+.manual-navigation {
+  width: 800px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  display: flex;
+  border: 2px solid rgb(179, 179, 180);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.manual-btn-clicked {
+  border: 2px solid #a758ff;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.container-slides {
+  display: flex;
+  margin: 24px auto;
+  height: 450px;
+  
+}
