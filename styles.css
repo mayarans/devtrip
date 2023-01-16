@@ -353,15 +353,22 @@ footer {
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0, 0.4);
-  
-  
 }
 
-.sign-up-modal {
+.sign-up-modal, .login-modal {
   width: 400px;
   height: 600px;
   background-color: white;
   border-radius: 6px;
+  display: none;
+}
+
+.login-modal {
+  width: 400px;
+  height: 460px;
+  background-color: white;
+  border-radius: 6px;
+  display: none;
 }
 
 .close-modal {
@@ -374,7 +381,7 @@ footer {
   cursor: pointer;
 }
 
-.sign-up-modal-content {
+.sign-up-modal-content, .login-modal-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -382,16 +389,9 @@ footer {
 
 /* ESTILOS DO FORMS DO SIGN-UP MODAL */
 
-.cadastro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .center {
   width: 320px;
   align-items: center;
-  
 }
 
 .form {
@@ -428,7 +428,6 @@ footer {
   margin-top: 11px;
 }
 
-
 .label-form {
   font-size: 13px;
   text-align: left;
@@ -444,7 +443,6 @@ footer {
   width: 325px;
   outline: none;
 }
-
 
 #button-cadastrar {
   display: inline-flex;
@@ -477,46 +475,53 @@ footer {
   padding-top: 2px;
 }
 
-.signup-input {
+.signup-input, .login-input {
   display: flex;
   align-items: center;
   margin-top: 15px;
   border-bottom: 1px solid #a758ff;
 }
 
-
-
-.icon-signup {
+.icon-signup, .icon-login {
   font-size: 15px;
   padding-top: 3.5px;
   padding-left: 10px;
   color: rgb(187, 187, 187);
 }
 
-.signup-title {
+.signup-title, .login-title {
   text-align: center;
   font-size: 26px;
   font-weight: 400;
   margin: 10px 0px 10px;
 }
 
-.signup-with {
+.signup-with, .login-with {
   display: flex;
   gap: 100px;
   justify-content: center;
   padding-bottom: 18px;
 }
 
-.signup-google img{
+.signup-google img, .login-google img {
   height: 35px;
   padding-top: 2px ;
 }
 
-.signup-facebook img {
+.signup-facebook img, .login-facebook img {
   height: 37px;
 }
 
-.signup-google, .signup-facebook {
+.signup-google,
+.signup-facebook,
+.login-google,
+.login-facebook {
   cursor: pointer;
   padding: 3px;
+}
+
+#login span, #signup span {
+  color: #a758ff;
+  cursor: pointer;
+  font-weight: bold;
 }
