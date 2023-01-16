@@ -98,3 +98,102 @@ body {
 #icon-search {
   color: #a758ff;
 }
+
+/* ESTILIZAÇÃO DA SEÇÃO DE CARDS  */
+.container-collection-card {
+  background-color: white;
+  padding: 130px 0px 14px;
+}
+
+.container-collection-card-title-icons {
+  max-width: 1176px;
+  display: flex;
+  margin: 0px auto;
+  padding: 0px 24px;
+  -moz-box-align: center;
+  align-items: center;
+  border: 0px none;
+}
+
+.container-collection-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  flex: 2 1 auto;
+  line-height: 1.5;
+  width: auto;
+  margin: 0;
+}
+
+.fa-circle-chevron-left, .fa-circle-chevron-right {
+  width: auto;
+  color: #cca7f7;
+  font-size: 22px;
+}
+
+.icon-clicked {
+  color: #a758ff;
+  cursor: pointer;
+}
+
+
+/* CARDS */
+.container-card-and-text {
+  display: flex;
+  justify-content: space-between; 
+  gap: 30px; 
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.container-move {
+  display: flex;
+  margin-top: 24px;
+  margin-left: 36px;
+  margin-right: 42px;
+  padding: 0px 58px;
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 120px;
+  text-align: center;
+  opacity: 90%;
+  transition: 0.5s;
+  transform: translateX(0);
+}
+
+ul:hover {
+  opacity: 100%;
+}
+
+.image-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-card {
+  transition: 0.5s;
+}
+
+.image-grow{
+  border-radius: 50%; 
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.image-card { 
+  width: 120px;
+  height: 120px;
+}
+
+.title-card {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
