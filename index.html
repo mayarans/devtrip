@@ -47,6 +47,154 @@
         </div>
       </section>
 
+      <section class="modal-content">
+        <div class="sign-up-modal">
+          <div class="close-modal">
+            <i class="fa-solid fa-xmark close-modal-icon"></i>
+          </div>
+          <div class="sign-up-modal-content">
+            <section class="center">
+              <h1 class="signup-title">Criar conta</h1>
+              <form class="form">
+                <div class="signup-input change-input-name">
+                  <i class="icon-signup fa-regular fa-user"></i>
+                  <input type="text" id="name" placeholder="Primeiro nome" />
+                </div>
+                <span class="required-field required-field-name"
+                  >Campo obrigatório</span
+                >
+
+                <div class="signup-input change-input-last-name">
+                  <i class="icon-signup fa-regular fa-id-card"></i>
+                  <input type="text" id="last-name" placeholder="Sobrenome" />
+                </div>
+                <span class="required-field required-field-last-name"
+                  >Campo obrigatório</span
+                >
+
+                <div class="signup-input change-input-email">
+                  <i class="icon-signup fa-regular fa-envelope"></i>
+                  <input type="email" id="email" placeholder="Email" />
+                </div>
+                <span class="required-field required-field-email"
+                  >Campo obrigatório</span
+                >
+
+                <div class="signup-input">
+                  <i class="icon-signup fa-solid fa-lock"></i>
+                  <input type="password" id="password" placeholder="Senha" />
+                </div>
+                <span class="required-field required-field-password"
+                  >Sua senha deve conter no mínimo 8 caracteres</span
+                >
+
+                <button
+                  type="submit"
+                  id="button-cadastrar"
+                  onclick="validate(email, senha, confirmarSenha)"
+                >
+                  CADASTRAR
+                </button>
+
+                <div class="signup-with">
+                  <div class="signup-google">
+                    <img
+                      src="./assets/logo-google.png"
+                      alt="logo do google"
+                      class="signup-with"
+                    />
+                  </div>
+
+                  <div class="signup-facebook">
+                    <img
+                      src="./assets/logo-facebook.webp"
+                      alt="logo do facebook"
+                    />
+                  </div>
+                </div>
+              </form>
+            </section>
+            <div id="fazer_login">
+              Já possui uma conta?
+              <a href="index.html" id="link">Faça o login!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sign-up-modal">
+          <div class="close-modal">
+            <i class="fa-solid fa-xmark close-modal-icon"></i>
+          </div>
+          <div class="sign-up-modal-content">
+            <section class="center">
+              <h1 class="signup-title">Criar conta</h1>
+              <form class="form">
+                <div class="signup-input change-input-name">
+                  <i class="icon-signup fa-regular fa-user"></i>
+                  <input type="text" id="name" placeholder="Primeiro nome" />
+                </div>
+                <span class="required-field required-field-name"
+                  >Campo obrigatório</span
+                >
+
+                <div class="signup-input change-input-last-name">
+                  <i class="icon-signup fa-regular fa-id-card"></i>
+                  <input type="text" id="last-name" placeholder="Sobrenome" />
+                </div>
+                <span class="required-field required-field-last-name"
+                  >Campo obrigatório</span
+                >
+
+                <div class="signup-input change-input-email">
+                  <i class="icon-signup fa-regular fa-envelope"></i>
+                  <input type="email" id="email" placeholder="Email" />
+                </div>
+                <span class="required-field required-field-email"
+                  >Campo obrigatório</span
+                >
+
+                <div class="signup-input">
+                  <i class="icon-signup fa-solid fa-lock"></i>
+                  <input type="password" id="password" placeholder="Senha" />
+                </div>
+                <span class="required-field required-field-password"
+                  >Sua senha deve conter no mínimo 8 caracteres</span
+                >
+
+                <button
+                  type="submit"
+                  id="button-cadastrar"
+                  onclick="validate(email, senha, confirmarSenha)"
+                >
+                  CADASTRAR
+                </button>
+
+                <div class="signup-with">
+                  <div class="signup-google">
+                    <img
+                      src="./assets/logo-google.png"
+                      alt="logo do google"
+                      class="signup-with"
+                    />
+                  </div>
+
+                  <div class="signup-facebook">
+                    <img
+                      src="./assets/logo-facebook.webp"
+                      alt="logo do facebook"
+                    />
+                  </div>
+                </div>
+              </form>
+            </section>
+            <div id="fazer_cadastro">
+              Não possui uma conta?
+              <a href="index.html" id="link">Faça o cadastro!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="container-collection-card">
         <div class="container-collection-card-title-icons">
           <h2 class="container-collection-card-title">

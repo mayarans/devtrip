@@ -67,3 +67,23 @@ arrowLeft.addEventListener("click", () => {
   container.scrollLeft -= movimento
   setTimeout(click, 300)
 })
+
+/* Abrindo modal de cadastro */
+
+const modalSignUp = document.querySelector(".modal-content"),
+  btnOpenModalSignUp = document.querySelector(".sign-up-button"),
+  btnCloseModal = document.querySelector(".close-modal-icon")
+
+btnOpenModalSignUp.onclick = function () {
+  modalSignUp.style.display = "flex"
+}
+
+btnCloseModal.onclick = function () {
+  modalSignUp.style.display = "none"
+}
+
+window.onclick = function (event) {
+  if (event.target == modalSignUp) {
+    modalSignUp.style.display = "none"
+  }
+}
