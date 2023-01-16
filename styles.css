@@ -103,10 +103,13 @@ body {
 .container-collection-card {
   background-color: white;
   padding: 130px 0px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-collection-card-title-icons {
-  max-width: 1176px;
+  width: 1176px;
   display: flex;
   margin: 0px auto;
   padding: 0px 24px;
