@@ -1,170 +1,237 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevTrip</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,100&family=Sen:wght@400;700;800&display=swap" rel="stylesheet"> 
-</head>
-<body>
-  <div class="environment">
-
-    <section class="navbar">
-      <div class="logo">
-        <img src="./assets/logo.png" alt="" id="image-logo">
-      </div>
-
-      <div class="search">
-        <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
-        <input type="text" class="input-search" placeholder="Pesquisar eventos, shows, teatros, cursos...">
-      </div>
-
-      <div class="location">
-        <i class="fa-solid fa-location-dot"></i>
-        <strong class="location-text">
-          Qualquer lugar
-        </strong>
-        <i class="fa-solid fa-sort-down" id="sort-down"></i>
-      </div>
-
-      <div class="login-signup">
-        <button class="login-button">ACESSE SUA CONTA</button>
-        <button class="sign-up-button">CADASTRE-SE</button>
-      </div>
-      
-    </section>
-
-    <section class="container-collection-card">
-      <div class="container-collection-card-title-icons">
-        <h2 class="container-collection-card-title">Aqui você DEV aproveitar!</h2>
-        <div class="container-collection-card-icons">
-          <i class="fa-solid fa-circle-chevron-left arrow-left"></i> 
-          <i class="fa-solid fa-circle-chevron-right icon-clicked arrow-right"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevTrip</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,100&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="environment">
+      <section class="navbar">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="" id="image-logo" />
         </div>
-      </div>
 
-      <div class="container-move">
-        <div class="container-card-and-text">
-          <ul>
-            <div class="image-grow">
-              <img class="image-card" alt="imagem" src="./assets/carnaval.png">
-            </div>
-            <li class="title-card">Carnaval</li>
-          </ul>
-  
-          <ul>
-            <div class="image-grow">
-              <img class="image-card" alt="imagem" src="./assets/festa.png">
-            </div>
-            <li class="title-card">Festas e shows</li>
-          </ul>
-  
-          <ul>
-            <div class="image-grow">
-              <img class="image-card" alt="imagem" src="./assets/teatro.png">
-            </div>
-            <li class="title-card">Teatro e espetáculos</li>
-          </ul>
-  
-          <ul>
-            <div class="image-grow">
-              <img class="image-card" alt="imagem" src="./assets/infantil.png">
-            </div>
-            <li class="title-card">Infantil</li>
-          </ul>
-  
-          <ul>
-            <div class="image-grow">
-              <img class="image-card" alt="imagem" src="./assets/standup.png">
-            </div>
-            <li class="title-card">Stand Up Comedy</li>
-          </ul>
-          
-          <ul>
-          <div class="image-grow">
-            <img class="image-card" alt="imagem" src="./assets/passeio.png">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+          <input
+            type="text"
+            class="input-search"
+            placeholder="Pesquisar eventos, shows, teatros, cursos..."
+          />
+        </div>
+
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <strong class="location-text"> Qualquer lugar </strong>
+          <i class="fa-solid fa-sort-down" id="sort-down"></i>
+        </div>
+
+        <div class="login-signup">
+          <button class="login-button">ACESSE SUA CONTA</button>
+          <button class="sign-up-button">CADASTRE-SE</button>
+        </div>
+      </section>
+
+      <section class="container-collection-card">
+        <div class="container-collection-card-title-icons">
+          <h2 class="container-collection-card-title">
+            Aqui você DEV aproveitar!
+          </h2>
+          <div class="container-collection-card-icons">
+            <i class="fa-solid fa-circle-chevron-left arrow-left"></i>
+            <i
+              class="fa-solid fa-circle-chevron-right icon-clicked arrow-right"
+            ></i>
           </div>
-            <li class="title-card">Passeios e tours</li>
-          </ul>
-  
-          <ul>
-            <div class="image-grow">
-              <img class="image-card" alt="imagem" src="./assets/palestra.png">
-            </div>
-            <li class="title-card">Congressos e palestras</li>
-          </ul>
-  
-          <ul>
-            <div class="image-grow">
-              <img class="image-card" alt="imagem" src="./assets/workshop.png">
-            </div>
-            <li class="title-card">Cursos e workshops</li>
-          </ul>
-  
-          <ul>
-            <div class="image-grow">
-              <img class="image-card" alt="imagem" src="./assets/esporte.png">
-            </div>
-            <li class="title-card">Esporte</li>
-          </ul>
-  
-          <ul>
-            <div class="image-grow">
-              <img class="image-card" alt="imagem" src="./assets/gastronomia.png">
-            </div>
-            <li class="title-card">Gastronomia</li>
-          </ul>
-  
         </div>
-      </div>
-    </section>
 
-    <section class="container-slideshow">
-      <div class="container-slideshow-title">
-        <h2 class="slideshow-title">Eventos em destaque na DevTrip</h2>
-      </div>
+        <div class="container-move">
+          <div class="container-card-and-text">
+            <ul>
+              <div class="image-grow">
+                <img
+                  class="image-card"
+                  alt="imagem"
+                  src="./assets/carnaval.png"
+                />
+              </div>
+              <li class="title-card">Carnaval</li>
+            </ul>
 
-      <div class="slideshow">
-        <div class="radio-buttons">
-          <input type="radio" class="radio-btn" id="radio1">
-          <input type="radio" class="radio-btn" id="radio2">
-          <input type="radio" class="radio-btn" id="radio3">
-          <input type="radio" class="radio-btn" id="radio4">
+            <ul>
+              <div class="image-grow">
+                <img class="image-card" alt="imagem" src="./assets/festa.png" />
+              </div>
+              <li class="title-card">Festas e shows</li>
+            </ul>
+
+            <ul>
+              <div class="image-grow">
+                <img
+                  class="image-card"
+                  alt="imagem"
+                  src="./assets/teatro.png"
+                />
+              </div>
+              <li class="title-card">Teatro e espetáculos</li>
+            </ul>
+
+            <ul>
+              <div class="image-grow">
+                <img
+                  class="image-card"
+                  alt="imagem"
+                  src="./assets/infantil.png"
+                />
+              </div>
+              <li class="title-card">Infantil</li>
+            </ul>
+
+            <ul>
+              <div class="image-grow">
+                <img
+                  class="image-card"
+                  alt="imagem"
+                  src="./assets/standup.png"
+                />
+              </div>
+              <li class="title-card">Stand Up Comedy</li>
+            </ul>
+
+            <ul>
+              <div class="image-grow">
+                <img
+                  class="image-card"
+                  alt="imagem"
+                  src="./assets/passeio.png"
+                />
+              </div>
+              <li class="title-card">Passeios e tours</li>
+            </ul>
+
+            <ul>
+              <div class="image-grow">
+                <img
+                  class="image-card"
+                  alt="imagem"
+                  src="./assets/palestra.png"
+                />
+              </div>
+              <li class="title-card">Congressos e palestras</li>
+            </ul>
+
+            <ul>
+              <div class="image-grow">
+                <img
+                  class="image-card"
+                  alt="imagem"
+                  src="./assets/workshop.png"
+                />
+              </div>
+              <li class="title-card">Cursos e workshops</li>
+            </ul>
+
+            <ul>
+              <div class="image-grow">
+                <img
+                  class="image-card"
+                  alt="imagem"
+                  src="./assets/esporte.png"
+                />
+              </div>
+              <li class="title-card">Esporte</li>
+            </ul>
+
+            <ul>
+              <div class="image-grow">
+                <img
+                  class="image-card"
+                  alt="imagem"
+                  src="./assets/gastronomia.png"
+                />
+              </div>
+              <li class="title-card">Gastronomia</li>
+            </ul>
+          </div>
         </div>
-        <div class="slides">
-          <div class="container-slides">
-            <div class="first slide">
-              <img src="./assets/show.png" alt="imagem">
-            </div>
+      </section>
 
-            <div class="slide">
-              <img src="./assets/show2.png" alt="imagem">
-            </div>
+      <section class="container-slideshow">
+        <div class="container-slideshow-title">
+          <h2 class="slideshow-title">Eventos em destaque na DevTrip</h2>
+        </div>
 
-            <div class="slide">
-              <img src="./assets/rave.png" alt="imagem">
-            </div>
+        <div class="slideshow">
+          <div class="radio-buttons">
+            <input type="radio" class="radio-btn" id="radio1" />
+            <input type="radio" class="radio-btn" id="radio2" />
+            <input type="radio" class="radio-btn" id="radio3" />
+            <input type="radio" class="radio-btn" id="radio4" />
+          </div>
+          <div class="slides">
+            <div class="container-slides">
+              <div class="first slide">
+                <img src="./assets/show.png" alt="imagem" />
+              </div>
 
-            <div class="slide">
-              <img src="./assets/curso.png" alt="imagem">
+              <div class="slide">
+                <img src="./assets/show2.png" alt="imagem" />
+              </div>
+
+              <div class="slide">
+                <img src="./assets/rave.png" alt="imagem" />
+              </div>
+
+              <div class="slide">
+                <img src="./assets/curso.png" alt="imagem" />
+              </div>
             </div>
           </div>
 
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
         </div>
+      </section>
 
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
+      <footer>
+        <div class="container-footer-top">
+          <div class="footer-title">
+            <img src="./assets/logo-branca.png" alt="logo" />
+          </div>
+          <div class="footer-pay">
+            COMPRE PELO APP
+            <a href="https://play.google.com/store/games" target="_blank"
+              ><img src="./assets/google-play.png" alt=""
+            /></a>
+            <a href="https://www.apple.com/br/app-store/" target="_blank"
+              ><img src="./assets/app-store.png" alt=""
+            /></a>
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="container-footer-bottom">
+          Copyright © 2022 - Mayara Nascimento
+        </div>
+      </footer>
     </div>
-  <script src="./index.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>

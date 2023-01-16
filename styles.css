@@ -290,5 +290,51 @@ ul:hover {
   display: flex;
   margin: 24px auto;
   height: 450px;
-  
+}
+
+/* RODAPÉ */
+
+footer {
+  padding-top: 5px;
+  background-color: #a758ff;
+}
+
+.container-footer-top {
+  max-width: 1176px;
+  display: flex;
+  margin: 0px auto;
+  padding: 0px 24px 14px;
+  -moz-box-align: center;
+  align-items: center;
+  border: 0px none;
+  height: 100px;
+}
+
+.footer-title {
+  font-weight: 700;
+  flex: 2 1 auto;
+  line-height: 1.5;
+  width: auto;
+  margin: 0;
+}
+
+.footer-title img {
+  height: 60px;
+}
+
+.footer-pay img {
+  width: 130px;
+}
+
+.footer-pay {
+  display: flex;
+  align-items: center;
+}
+
+.container-footer-bottom {
+  display: flex;
+  border-top: 1px solid white;
+  padding: 24px 0px;
+  margin: 0px 80px;
+  justify-content: center;
 }
