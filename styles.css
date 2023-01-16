@@ -50,6 +50,7 @@ body {
 .location {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .location-text {
@@ -358,7 +359,7 @@ footer {
   background-color: rgb(0, 0, 0, 0.4);
 }
 
-.sign-up-modal, .login-modal {
+.sign-up-modal {
   width: 400px;
   height: 600px;
   background-color: white;
@@ -366,7 +367,7 @@ footer {
   display: none;
 }
 
-.login-modal {
+.login-modal, .location-modal {
   width: 400px;
   height: 460px;
   background-color: white;
@@ -384,7 +385,7 @@ footer {
   cursor: pointer;
 }
 
-.sign-up-modal-content, .login-modal-content {
+.sign-up-modal-content, .login-modal-content, .location-modal-content {
   display: flex;
   flex-direction: column;
   align-items: center;

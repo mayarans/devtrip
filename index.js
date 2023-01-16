@@ -68,34 +68,49 @@ arrowLeft.addEventListener("click", () => {
   setTimeout(click, 300)
 })
 
-/* Abrindo modal de cadastro e de login */
+/* Abrindo modal de cadastro, login e localização */
 const modalContent = document.querySelector(".modal-content")
 const modalSignUp = document.querySelector(".sign-up-modal")
 const modalLogin = document.querySelector(".login-modal")
+const modalLocation = document.querySelector(".location-modal")
+
 const btnOpenModalSignUp = document.querySelector(".sign-up-button")
 const btnOpenModalLogin = document.querySelector(".login-button")
+const btnOpenModalLocation = document.querySelector(".location")
+
 const btnCloseModal = document.querySelectorAll(".close-modal-icon")
 
 function openSignUpModal() {
   modalContent.style.display = "flex"
   modalSignUp.style.display = "block"
   modalLogin.style.display = "none"
+  modalLocation.style.display = "none"
 }
 
 function openLoginModal() {
   modalContent.style.display = "flex"
-  modalLogin.style.display = "block"
   modalSignUp.style.display = "none"
+  modalLogin.style.display = "block"
+  modalLocation.style.display = "none"
+}
+
+function openLocationModal() {
+  modalContent.style.display = "flex"
+  modalSignUp.style.display = "none"
+  modalLogin.style.display = "none"
+  modalLocation.style.display = "block"
 }
 
 function closeModals() {
   modalContent.style.display = "none"
-  modalLogin.style.display = "none"
   modalSignUp.style.display = "none"
+  modalLogin.style.display = "none"
+  modalLocation.style.display = "none"
 }
 
 btnOpenModalSignUp.addEventListener("click", openSignUpModal)
 btnOpenModalLogin.addEventListener("click", openLoginModal)
+btnOpenModalLocation.addEventListener("click", openLocationModal)
 
 btnCloseModal.forEach((button, i) => {
   btnCloseModal[i].addEventListener("click", closeModals)
