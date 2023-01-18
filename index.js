@@ -46,9 +46,10 @@ setInterval(function () {
   nextImage()
 }, 5000)
 
+
 getSlides.scrollLeft = 0
 function nextImage() {
-  getSlides.scrollLeft += 800
+  getSlides.scrollLeft += 1145
   count++
   getManualBtn[count - 1].classList.remove("manual-btn-clicked")
   if (count >= getInputRadio.length) {
