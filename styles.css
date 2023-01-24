@@ -43,10 +43,6 @@ body {
   box-shadow: rgba(9, 10, 10, 0.15) 0px 1px 2px 0px;
 }
 
-.search-clicked {
-  border: 1px solid #a758ff;
-}
-
 .location {
   display: flex;
   align-items: center;
@@ -159,7 +155,7 @@ body {
   max-width: 1200px;
 }
 
-ul {
+.container-card-and-text ul {
   list-style: none;
   padding: 0;
   max-width: 120px;
@@ -169,7 +165,7 @@ ul {
   transform: translateX(0);
 }
 
-ul:hover {
+.container-card-and-text ul:hover {
   opacity: 100%;
 }
 
@@ -420,7 +416,7 @@ footer {
   display: none;
 }
 
-.login-modal, .location-modal {
+.login-modal {
   width: 400px;
   height: 460px;
   background-color: white;
@@ -581,4 +577,98 @@ footer {
   color: #a758ff;
   cursor: pointer;
   font-weight: bold;
+}
+
+/*  ESTILOS MODAL DE LOCALIZAÇÃO */
+
+.location-modal {
+  width: 520px;
+  height: 500px;
+  background-color: white;
+  border-radius: 6px;
+  display: none;
+}
+
+.center-location {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 0px 24px;
+  
+  
+
+}
+
+.search-location {
+  padding: 8px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: rgba(9, 10, 10, 0.15) 0px 1px 2px 0px;
+  margin-bottom: 16px;
+}
+
+.input-search-location {
+  padding: 0px 8px;
+  font-size: 16px;
+  border: medium none;
+  outline: none;
+  width: 90%;
+}
+
+.actual-location {
+  display: flex;
+  padding: 20px 30px;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgb(221, 224, 228);
+  border-top: 1px solid rgb(221, 224, 228);
+  cursor: pointer;
+  
+}
+
+.actual-location:hover, .modal-location-cities ul li:hover {
+  background-color: rgb(245, 247, 248);
+}
+
+.icon-location {
+  color: #a758ff;
+  font-size: 25px;
+}
+
+.actual-location-text {
+  font-size: 15px;
+}
+
+.modal-location-cities {
+  height: 240px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-location-cities ul {
+  width: 100%;
+  padding: 0;
+}
+
+.modal-location-cities ul li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-y: scroll;
+  padding: 20px 30px;
+  width: auto;
+  cursor: pointer;
+}
+
+.fa-location-dot {
+  color: #a758ff;
+}
+
+/* Alterando a borda dos inputs */
+.search-clicked {
+  border: 1px solid #a758ff;
 }

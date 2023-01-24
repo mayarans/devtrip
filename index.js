@@ -10,6 +10,18 @@ getInputSearch.addEventListener("blur", function () {
   getDivSearch.classList.remove("search-clicked")
 })
 
+/* Alterando a cor da borda do input na barra de pesquisa do modal de localização*/
+const getInputSearchLocation = document.querySelector(".input-search-location")
+const getDivSearchLocation = document.querySelector(".search-location")
+
+getInputSearchLocation.addEventListener("focus", function () {
+  getDivSearchLocation.classList.add("search-clicked")
+})
+
+getInputSearchLocation.addEventListener("blur", function () {
+  getDivSearchLocation.classList.remove("search-clicked")
+})
+
 /*Movimentação para direita e esquerda da lista de categorias de eventos */
 
 const arrowRight = document.querySelector(".arrow-right")

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevTrip</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -54,16 +54,39 @@
             <i class="fa-solid fa-xmark close-modal-icon"></i>
           </div>
           <div class="location-modal-content">
-            <section class="center">
+            <section class="center-location">
               <h1 class="location-title">Localização</h1>
-              <div class="login-input change-input-email">
-                <i class="icon-login fa-regular fa-envelope"></i>
-                <input type="email" id="email" placeholder="Email" />
+              <div class="search-location">
+                <input
+                  type="text"
+                  class="input-search-location"
+                  placeholder="Onde?"
+                />
               </div>
-              <span class="required-field required-field-email"
-                >Campo obrigatório</span
-              >
             </section>
+          </div>
+          <div class="actual-location">
+            <i class="icon-location fa-solid fa-location-arrow"></i>
+            <span class="actual-location-text"
+              >Usar minha localização atual</span
+            >
+          </div>
+          <div class="modal-location-cities">
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Qualquer lugar</li>
+              <li><i class="fa-solid fa-location-dot"></i> Campina Grande</li>
+              <li><i class="fa-solid fa-location-dot"></i> João Pessoa</li>
+              <li><i class="fa-solid fa-location-dot"></i> Patos</li>
+              <li><i class="fa-solid fa-location-dot"></i> Queimadas</li>
+              <li><i class="fa-solid fa-location-dot"></i> Sousa</li>
+              <li><i class="fa-solid fa-location-dot"></i> Pilões</li>
+              <li><i class="fa-solid fa-location-dot"></i> Alagoa Grande</li>
+              <li><i class="fa-solid fa-location-dot"></i> Soledade</li>
+              <li><i class="fa-solid fa-location-dot"></i> Cabaceiras</li>
+              <li><i class="fa-solid fa-location-dot"></i> Cajazeiras</li>
+            </ul>
           </div>
         </div>
 
@@ -341,9 +364,10 @@
                 <div class="slide-information">
                   <div class="event-details">
                     <span class="event-details-date">SEX, 03/02 - 22H</span>
-                    <h1 class="event-details-title">Samara Almeida live session</h1>
+                    <h1 class="event-details-title">
+                      Samara Almeida live session
+                    </h1>
                     <span class="event-details-local">Ao vivo na Twitch</span>
-
                   </div>
                   <button class="event-details-button">VER DETALHES</button>
                 </div>
@@ -355,7 +379,9 @@
                   <div class="event-details">
                     <span class="event-details-date">DOM, 12/02 - 20H</span>
                     <h1 class="event-details-title">Sertanejo acústico</h1>
-                    <span class="event-details-local">Bar do Raimundo, Serra Talhada - Pernambuco</span>
+                    <span class="event-details-local"
+                      >Bar do Raimundo, Serra Talhada - Pernambuco</span
+                    >
                   </div>
                   <button class="event-details-button">VER DETALHES</button>
                 </div>
@@ -367,7 +393,9 @@
                   <div class="event-details">
                     <span class="event-details-date">QUI, 23/03 - 22H</span>
                     <h1 class="event-details-title">Rave de Funk</h1>
-                    <span class="event-details-local">Estação das Docas, Belém - Pará</span>
+                    <span class="event-details-local"
+                      >Estação das Docas, Belém - Pará</span
+                    >
                   </div>
                   <button class="event-details-button">VER DETALHES</button>
                 </div>
@@ -378,8 +406,12 @@
                 <div class="slide-information">
                   <div class="event-details">
                     <span class="event-details-date">SAB, 21/01 - 16H</span>
-                    <h1 class="event-details-title">Barnardo Carvalho - Workshop de Violão</h1>
-                    <span class="event-details-local">Zepellin MIX Gourmeteria, Vitória - Espírito Santo</span>
+                    <h1 class="event-details-title">
+                      Barnardo Carvalho - Workshop de Violão
+                    </h1>
+                    <span class="event-details-local"
+                      >Zepellin MIX Gourmeteria, Vitória - Espírito Santo</span
+                    >
                   </div>
                   <button class="event-details-button">VER DETALHES</button>
                 </div>
